@@ -18,20 +18,22 @@ interface Props {
 }
 
 const PlatFormIconList = ({ platforms }: Props) => {
-    const iconMap: {[key: string]: IconType} = {
-        pc: FaWindows,
-        playstation: FaPlaystation,
-        xbox: FaXbox,
-        nintendo: SiNintendo,
-        mac: FaApple,
-        linux: FaLinux,
-        ios: MdPhoneIphone,
-        android: FaAndroid,
-        web: BsGlobe
-    }
+  const iconMap: { [key: string]: IconType } = {
+    pc: FaWindows,
+    playstation: FaPlaystation,
+    xbox: FaXbox,
+    nintendo: SiNintendo,
+    mac: FaApple,
+    linux: FaLinux,
+    ios: MdPhoneIphone,
+    android: FaAndroid,
+    web: BsGlobe,
+  };
   return (
     <HStack marginY={2}>
-      {platforms.map((platform) => <Icon as={iconMap[platform.slug]} color='gray.500'/>)}
+      {platforms.map((platform) => (
+        <Icon as={iconMap[platform.slug]} color="gray.500" key={platform.id} />
+      ))}
     </HStack>
   );
 };
