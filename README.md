@@ -11,5 +11,5 @@ To get started with GameHub, follow these steps:
 5. Run npm run dev to start the web server.
 
 # Technologies used
- React and TypeScript
- Style using vanilla CSS, CSS modules, and CSS-in-JS
+ * Build with React and TypeScript
+ * Style using vanilla CSS, CSS modules, and CSS-in-JS
